@@ -1,21 +1,16 @@
-## ⚖️ License & Attribution
-Licensed under the **MIT License**. This project is open and free to use for commercial and personal projects.
-
-
-
 # Kope's SpriteComposer 2D
 
-[**© 2026 Keshav Prasad Neupane ("Kope")** **License:**](./LICENSE.md) [MIT License](https://opensource.org/licenses/MIT)
+[**© 2026 Keshav Prasad Neupane ("Kope")** **License:**](LICENSE.md) [MIT License](https://opensource.org/licenses/MIT)
 
 ---
 
-
 ## 🌟 The Spirit of the Project
-This project was created for the purpose of learning and creating a modular system for Unity 2D. It is made open-source to respect the **LPC (Liberated Pixel Cup)** spirit and freeness due to use of their asset during creation. It is shared to support the game development community and honor the philosophy of open collaboration.
+This project was created for the purpose of learning and creating a modular system for Unity 2D. It is made open-source to respect the **LPC (Liberated Pixel Cup)** spirit and freeness due to the use of their assets during creation. It is shared to support the game development community and honor the philosophy of open collaboration.
 
 ## 📖 Overview
 **Kope's SpriteComposer 2D** is a comprehensive framework for Unity designed to handle modular character assembly. It allows developers to build characters from independent body parts and equipment while keeping animations perfectly synchronized through a data-driven, performant approach.
 
+---
 
 ## 🚀 Key Features
 
@@ -34,7 +29,7 @@ This project was created for the purpose of learning and creating a modular syst
 
 ## 🛠 Technical Design Philosophy
 * **Enum-Based Pipeline:** Uses strictly defined ID gaps (e.g., 0-499, 500-999) in enums to allow massive expansion without breaking existing data.
-* **Fail-Fast Validation:** Includes `OnValidate` logic to catch invalid library setups before they reach a game build.
+* **Fail-Fast Validation:** Includes `OnValidate` logic to catch invalid library setups before they ever reach a game build.
 * **Modularity:** Uses Generics (`TPart`) to remain agnostic to your specific body parts—customize the enums and the framework adapts.
 
 ---
@@ -55,8 +50,8 @@ This project was created for the purpose of learning and creating a modular syst
 
 ### 3. ScriptableObject (SO) Configuration
 To make the libraries usable by the resolver, you must wrap them in ScriptableObjects:
-1. Create a Body or Equipment asset via: `Create > Animation > BodyRegionAsset or EquipmentAsset`.
-2. Fill in the **Variant Name**, **Gender**, **Race Whitelist**, **Body Part** and **Color**type.
+1. Create a Body or Equipment asset via: `Create > Animation > BodyRegionAsset` or `EquipmentAsset`.
+2. Fill in the **Variant Name**, **Gender**, **Race Whitelist**, **Body Part**, and **Color** type.
 3. Assign your generated `.spriteLib` to this SO.
 4. **Naming Convention:** It is highly recommended to name these assets using the format `gender_part_variant_color` (e.g., `male_torso_plate_iron`).
    * *Note: While not strictly required for logic yet, this format is optimized for future Addressables integration.*
@@ -78,11 +73,14 @@ To prevent modular parts from flickering or sorting incorrectly:
 
 ---
 
-## ⚖️ License & Attribution
-Licensed under the **MIT License**.
+## ⚖️ License Summary
+This framework is available under the **[MIT License](LICENSE.md)**. 
+
+* **Attribution:** While not legally required, if you use this tool, I’d appreciate a shout-out to **Kope's SpriteComposer 2D** in your project's credits!
+* **LPC Assets:** Please note that any included LPC assets follow their own **[GPL/CC licenses](LICENSE.md#4-sprite-assets--lpc-compatibility)**. This MIT license applies strictly to the C# source code and framework logic.
 
 
-**Attribution:** While not legally required by MIT for the final product, I kindly request credit in your "About" or "Credits" section:
-> *Contains Kope's SpriteComposer 2D by Keshav Prasad Neupane*
-
-**LPC Note:** Any LPC assets included are subject to their original licenses (GPL/CC BY-SA). This license applies only to the C# source code and framework logic.
+## Author Links
+- [GitHub](https://github.com/KeshavPsdNeupane)  
+- [LinkedIn](https://www.linkedin.com/in/keshav-prasad-neupane-259542318/)  
+- [YouTube](https://www.youtube.com/@KeshavPsdNeupane)

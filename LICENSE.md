@@ -26,7 +26,7 @@ A copyright and permission notice is included at the top of each C# source file.
 ## 3. Attribution Requirement
 While the MIT license requires the copyright notice to remain in the code, I kindly request that you provide visible credit in your project’s "Credits" or "About" section:
 
-> **Contains Kope's SpriteComposer 2D by Keshav Prasad Neupane**
+> **Kope's SpriteComposer 2D by Keshav Prasad Neupane**
 
 ---
 
@@ -36,8 +36,3 @@ While the MIT license requires the copyright notice to remain in the code, I kin
 * **LPC Licensing:** Users must comply with original LPC asset licenses (GNU GPL v3.0 / CC BY-SA 3.0). This license applies strictly to the C# source code logic.
 
 ---
-
-## Author Links
-- [GitHub](https://github.com/KeshavPsdNeupane)  
-- [LinkedIn](https://www.linkedin.com/in/keshav-prasad-neupane-259542318/)  
-- [YouTube](https://www.youtube.com/@KeshavPsdNeupane)
