@@ -33,6 +33,6 @@ While the MIT license requires the copyright notice to remain in the code, I kin
 ## 4. Sprite Assets & LPC Compatibility
 * **Asset Independence:** Designers are free to use **any sprite assets**—there is no requirement to use LPC assets. The system is modular and asset-agnostic.
 * **Third-Party Rights:** Any LPC assets used within this system are **not** covered by this MIT license. 
-* **LPC Licensing:** Users must comply with original LPC asset licenses (GNU GPL v3.0 / CC BY-SA 3.0). This license applies strictly to the C# source code logic.
+* **LPC Licensing:** [Users must comply with original LPC asset licenses (GNU GPL v3.0 / CC BY-SA 3.0). This license applies strictly to the C# source code logic.](CREDITS.csv)
 
 ---

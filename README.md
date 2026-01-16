@@ -5,10 +5,13 @@
 ---
 
 ## 🌟 The Spirit of the Project
-This project was created for the purpose of learning and creating a modular system for Unity 2D. It is made open-source to respect the **LPC (Liberated Pixel Cup)** spirit and freeness due to the use of their assets during creation. It is shared to support the game development community and honor the philosophy of open collaboration.
+This project was created for the purpose of learning and creating a modular system for Unity 2D. It is made open-source to respect the **LPC (Liberated Pixel Cup)** spirit and freeness due to the use of their assets during creation. It provides a generic, data-driven architecture that bridges the gap between raw spritesheets and synchronized modular animation.
 
 ## 📖 Overview
-**Kope's SpriteComposer 2D** is a comprehensive framework for Unity designed to handle modular character assembly. It allows developers to build characters from independent body parts and equipment while keeping animations perfectly synchronized through a data-driven, performant approach.
+**Kope's SpriteComposer 2D** is a comprehensive framework for Unity designed for modular character assembly. It allows developers to build characters from independent body parts and equipment while keeping animations perfectly synchronized through a data-driven, performant approach.
+
+> [!TIP]
+> **Starter Kit Included:** To help you get started immediately, the project includes **Example Concrete Classes**, **Dummy Animation Assets**, and **Sample Sprites**. These are intended to serve as blueprints and templates for your own custom implementations.
 
 ---
 
@@ -28,16 +31,16 @@ This project was created for the purpose of learning and creating a modular syst
 ---
 
 ## 🛠 Technical Design Philosophy
+* **Generic & Modular:** Uses Generics (`TPart`) to remain agnostic to your specific body parts—customize the enums and the framework adapts.
 * **Enum-Based Pipeline:** Uses strictly defined ID gaps (e.g., 0-499, 500-999) in enums to allow massive expansion without breaking existing data.
 * **Fail-Fast Validation:** Includes `OnValidate` logic to catch invalid library setups before they ever reach a game build.
-* **Modularity:** Uses Generics (`TPart`) to remain agnostic to your specific body parts—customize the enums and the framework adapts.
 
 ---
 
 ## 📋 Usage Flow
 
 ### 1. Asset Preparation
-1. Prepare your spritesheets (LPC-compatible or custom).
+1. Prepare your spritesheets (use the provided **LPC-compatible example sprites** or your own).
 2. Define **Row Naming Data** assets to match your sheet layout.
    * *See `animation_row_name_template_asset` for an example.*
 3. Slice and auto-name frames using the **Grid Auto Slicer** (`Tools > Grid Auto Slicer`).
@@ -49,16 +52,14 @@ This project was created for the purpose of learning and creating a modular syst
 3. Convert the output to `.spriteLib` using the Unity Asset Upgrader.
 
 ### 3. ScriptableObject (SO) Configuration
-To make the libraries usable by the resolver, you must wrap them in ScriptableObjects:
+To make the libraries usable by the resolver, wrap them in ScriptableObjects. Use the **example concrete SO classes** provided:
 1. Create a Body or Equipment asset via: `Create > Animation > BodyRegionAsset` or `EquipmentAsset`.
 2. Fill in the **Variant Name**, **Gender**, **Race Whitelist**, **Body Part**, and **Color** type.
 3. Assign your generated `.spriteLib` to this SO.
-4. **Naming Convention:** It is highly recommended to name these assets using the format `gender_part_variant_color` (e.g., `male_torso_plate_iron`).
-   * *Note: While not strictly required for logic yet, this format is optimized for future Addressables integration.*
 
 ### 4. Assembly & Testing
-1. Attach the `StaticAnimationLibraryResolver` (or a custom resolver) to your character prefab.
-2. Assign your configured **SO Assets** (from Step 3) to the resolver.
+1. Attach the provided **Example Resolver** (`StaticAnimationLibraryResolver`) or your own custom resolver to your character prefab.
+2. Assign your configured **SO Assets** to the resolver.
 3. Use the **Snap Tool** to preview animations. Toggle **Record Mode** in the Unity Animator to save these snaps as keyframes automatically.
 
 ---
@@ -66,21 +67,23 @@ To make the libraries usable by the resolver, you must wrap them in ScriptableOb
 ## ⑄ Optimization: Better Y-Sorting
 To prevent modular parts from flickering or sorting incorrectly:
 
-1. **Sorting Layers:** Create a layer named `Actor` or `Entity`.
-2. **Project Settings:** In *Graphics > Transparency Sort Mode*, set to `Custom Axis` (**X:0, Y:1, Z:0**).
-3. **Pivots:** Ensure Sprite Renderers use `Pivot` for sorting. (The included "Set to Pivot" script automates this).
-4. **Canvas Grouping:** Add a `Canvas Group` to the parent GameObject of your modular parts. This forces Unity to treat the entire character as a single unit for sorting purposes.
+* **Sorting Layers:** Create a layer named `Actor` or `Entity`.
+* **Project Settings:** In *Graphics > Transparency Sort Mode*, set to `Custom Axis` (**X:0, Y:1, Z:0**).
+* **Pivots:** Ensure Sprite Renderers use `Pivot` for sorting. (The included `SetSpriteToPivot` script automates this).
+* **Canvas Grouping:** Add a `Canvas Group` to the parent GameObject of your modular parts. This forces Unity to treat the entire character as a single unit for sorting purposes.
 
 ---
 
 ## ⚖️ License Summary
-This framework is available under the **[MIT License](LICENSE.md)**. 
+This framework is available under the **MIT License**.
 
 * **Attribution:** While not legally required, if you use this tool, I’d appreciate a shout-out to **Kope's SpriteComposer 2D** in your project's credits!
-* **LPC Assets:** Please note that any included LPC assets follow their own **[GPL/CC licenses](LICENSE.md#4-sprite-assets--lpc-compatibility)**. This MIT license applies strictly to the C# source code and framework logic.
+* **LPC Assets:** [Any included LPC assets follow their own **GPL/CC licenses**. The MIT license applies strictly to the C# source code and framework logic.](CREDITS.csv)
 
+
+---
 
 ## Author Links
-- [GitHub](https://github.com/KeshavPsdNeupane)  
-- [LinkedIn](https://www.linkedin.com/in/keshav-prasad-neupane-259542318/)  
-- [YouTube](https://www.youtube.com/@KeshavPsdNeupane)
+* [**GitHub**](https://github.com/KeshavPsdNeupane)
+* [**LinkedIn**](https://www.linkedin.com/in/keshav-prasad-neupane-259542318/)
+* [**YouTube**](https://www.youtube.com/@KeshavPsdNeupane)

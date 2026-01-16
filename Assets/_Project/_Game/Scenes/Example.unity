@@ -245,57 +245,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 194466219882059743, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
-      objectReference: {fileID: 0}
-    - target: {fileID: 610385372327147980, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
-      objectReference: {fileID: 0}
-    - target: {fileID: 863551125990305928, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
-      objectReference: {fileID: 0}
-    - target: {fileID: 1290175588638742880, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
-      objectReference: {fileID: 0}
-    - target: {fileID: 1290175588638742880, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_CategoryHash
-      value: 5.449709e-22
-      objectReference: {fileID: 0}
-    - target: {fileID: 1461213939397561517, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
-      objectReference: {fileID: 0}
-    - target: {fileID: 1544861726327990890, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
-      objectReference: {fileID: 0}
-    - target: {fileID: 2222223126354630835, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
-      objectReference: {fileID: 0}
-    - target: {fileID: 2556741835694889872, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
-      objectReference: {fileID: 0}
     - target: {fileID: 3048572483934911602, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
       propertyPath: m_Name
       value: Animation
-      objectReference: {fileID: 0}
-    - target: {fileID: 5851198802960128052, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
-      objectReference: {fileID: 0}
-    - target: {fileID: 6152516264922837659, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6152516264922837659, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6152516264922837659, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -336,38 +288,6 @@ PrefabInstance:
     - target: {fileID: 6152516264922837659, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6169189097393889413, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
-      objectReference: {fileID: 0}
-    - target: {fileID: 6169189097393889413, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_CategoryHash
-      value: 5.449709e-22
-      objectReference: {fileID: 0}
-    - target: {fileID: 6510418596479908096, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
-      objectReference: {fileID: 0}
-    - target: {fileID: 7121043095632084342, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
-      objectReference: {fileID: 0}
-    - target: {fileID: 8309880159173220309, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
-      objectReference: {fileID: 0}
-    - target: {fileID: 8309880159173220309, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_CategoryHash
-      value: 5.449709e-22
-      objectReference: {fileID: 0}
-    - target: {fileID: 8489052238718460152, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
-      objectReference: {fileID: 0}
-    - target: {fileID: 8708032636978680071, guid: a3a8a13a5b0e837f2a16f09baf3d90a6, type: 3}
-      propertyPath: m_labelHash
-      value: 3.0155645e-28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
