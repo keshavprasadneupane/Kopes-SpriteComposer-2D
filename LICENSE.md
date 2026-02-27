@@ -7,8 +7,19 @@ This project was created for the purpose of learning and creating a modular syst
 
 ---
 
-## 1. Software License (MIT)
-The source code, Editor scripts, and documentation of **Kope's SpriteComposer 2D** are licensed under the **MIT License**.
+## ⚠️ IMPORTANT: License Scope
+**The MIT License applies ONLY to the custom C# code in this framework.** It does NOT cover:
+* **Unity Engine** (governed by Unity's licensing terms)
+* **Third-party dependencies** (NuGet packages, plugins, external libraries)
+* **LPC Assets** (covered by their own GPL/CC licenses)
+* **Any other integrated third-party content**
+
+**Users are responsible for complying with all applicable licenses** for Unity and any third-party libraries used.
+
+---
+
+## 1. Software License (MIT) — Custom Code Only
+The **custom C# source code, Editor scripts, and documentation** written specifically for **Kope's SpriteComposer 2D** are licensed under the **MIT License**. This applies exclusively to code authored for this framework and does not extend to Unity, third-party libraries, or integrated assets.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -30,9 +41,20 @@ While the MIT license requires the copyright notice to remain in the code, I kin
 
 ---
 
-## 4. Sprite Assets & LPC Compatibility
+## 4. Third-Party Content & External Dependencies
+
+### Sprite Assets & LPC Compatibility
 * **Asset Independence:** Designers are free to use **any sprite assets**—there is no requirement to use LPC assets. The system is modular and asset-agnostic.
-* **Third-Party Rights:** Any LPC assets used within this system are **not** covered by this MIT license. 
-* **LPC Licensing:** [Users must comply with original LPC asset licenses (GNU GPL v3.0 / CC BY-SA 3.0). This license applies strictly to the C# source code logic.](CREDITS.csv)
+* **Third-Party Assets:** Any LPC assets, textures, or other included assets are **not** covered by this MIT license.
+* **LPC Licensing:** [Users must comply with original LPC asset licenses (GNU GPL v3.0 / CC BY-SA 3.0).](CREDITS.csv)
+
+### Unity Engine
+* **Not Covered:** The MIT License applies **only to custom code**. Unity itself is governed by [Unity's own licensing terms](https://unity.com/legal/terms-of-service).
+* **User Responsibility:** You must have a valid Unity license to use this project.
+
+### Third-Party Libraries & Dependencies
+* **NuGet Packages:** Any NuGet or external libraries referenced in this project follow their own respective licenses.
+* **Licensed Plugins:** Any third-party tools or plugins integrated into this project retain their original licensing.
+* **Compliance Required:** Users are responsible for ensuring compliance with all applicable third-party licenses.
 
 ---

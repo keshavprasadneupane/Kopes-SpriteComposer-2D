@@ -75,10 +75,22 @@ To prevent modular parts from flickering or sorting incorrectly:
 ---
 
 ## ⚖️ License Summary
-This framework is available under the **MIT License**.
+This framework is available under the **MIT License**—**for the custom code only**.
 
-* **Attribution:** While not legally required, if you use this tool, I’d appreciate a shout-out to **Kope's SpriteComposer 2D** in your project's credits!
-* **LPC Assets:** [Any included LPC assets follow their own **GPL/CC licenses**. The MIT license applies strictly to the C# source code and framework logic.](CREDITS.csv)
+### Scope of the MIT License
+The MIT License applies **exclusively** to:
+* C# source code written for this framework
+* Editor tools and runtime systems created for this project
+* Custom framework logic and architecture
+
+### What is NOT Covered
+* **Unity Engine Core:** Unity is governed by [Unity's licensing terms](https://unity.com/legal/terms-of-service)
+* **Third-party Dependencies:** Any NuGet packages, plugins, or external libraries follow their own licenses
+* **LPC Assets:** [Included LPC sprite assets follow their own **GPL v3.0 / CC BY-SA 3.0 licenses**](CREDITS.csv)
+* **Other Third-Party Content:** Any licensed assets or tools integrated into this project retain their original licensing
+
+### Attribution
+While not legally required by the MIT License, I'd appreciate a shout-out to **Kope's SpriteComposer 2D** in your project's credits if you use this framework!
 
 
 ---
